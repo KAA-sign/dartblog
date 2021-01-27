@@ -1,0 +1,25 @@
+{
+    "python.pythonPath": "/home/anthony/venv/django_dartblog/bin/python",
+    "python.linting.pylintPath": "/home/anthony/venv/django_dartblog/bin/pylint",
+    "editor.formatOnSave": true,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.pylintArgs": [
+        "--disable=C0111", // missing docstring
+        "--load-plugins=pylint_django,pylint_celery",
+     ],
+    "python.linting.pylintEnabled": true,
+    "python.testing.pytestArgs": [
+        "siteblog"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.promptToConfigure": false,
+    "python.linting.enabled": true,
+    "django.snippets.exclude": [
+        "cms",
+        "wagtail"
+    ],
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on"
+}
