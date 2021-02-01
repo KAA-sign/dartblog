@@ -1,13 +1,14 @@
 {
     "python.pythonPath": "/home/anthony/venv/django_dartblog/bin/python",
-    "python.linting.pylintPath": "/home/anthony/venv/django_dartblog/bin/pylint",
     "editor.formatOnSave": true,
-    "python.linting.pycodestyleEnabled": false,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "pylint",
     "python.linting.pylintArgs": [
         "--disable=C0111", // missing docstring
-        "--load-plugins=pylint_django,pylint_celery",
+        "--load-plugins", "pylint_django",
+        "--disable=django-not-configured",
      ],
-    "python.linting.pylintEnabled": true,
     "python.testing.pytestArgs": [
         "siteblog"
     ],
@@ -21,5 +22,8 @@
         "wagtail"
     ],
     "diffEditor.wordWrap": "on",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "[python]": {
+
+    }
 }
